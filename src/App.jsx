@@ -5,7 +5,7 @@ export default function App() {
   return (
     <>
       <NavBar />
-      <LevelOne name={"Anthony"}/>
+      <LevelOne name={"Anthony"} emoji={"👋"}/>
     </>
   )
 }
