@@ -29,6 +29,14 @@ const regions = [
         title: 'Map an array, pass a props, and display it.',
         Component: <LevelThree />,
     },
+    {
+        id: 4,
+        imgSrc: 'https://cdn.pixabay.com/photo/2024/05/26/15/27/anime-8788959_1280.jpg',
+        level: 'Level 4',
+        date: 'November 24',
+        title: 'Conditionally render a content or a component and display it.',
+        Component: <LevelFour />,
+    }
 ];
 
 const ITEMS_PER_PAGE = 3;
@@ -60,19 +68,20 @@ export const Homepage = () => {
                     onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))} 
                     disabled={currentPage === 1}
                 >
-                    <svg xmlns="http://www.w3.org/2000/svg" classnamename="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
-                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+
                 </button>
 
                 <button 
                     type="button" 
                     className="flex items-center justify-center text-gray-400 transition-all duration-200 bg-transparent border border-gray-300 rounded w-9 h-9 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white"
                     onClick={() => setCurrentPage(prev => Math.max(prev + 1, 1))} 
-                    disabled={currentPage === 1}
+                    disabled={currentPage === totalPages}
                 >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                     </svg>
                 </button>
             </div>
@@ -127,7 +136,7 @@ export const Homepage = () => {
                 type="button" 
                 className="flex items-center justify-center text-gray-400 transition-all duration-200 bg-transparent border border-gray-300 rounded w-9 h-9 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white"
                 onClick={() => setCurrentPage(prev => Math.max(prev + 1, 1))} 
-                disabled={currentPage === 1}
+                disabled={currentPage === totalPages}
             >
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
