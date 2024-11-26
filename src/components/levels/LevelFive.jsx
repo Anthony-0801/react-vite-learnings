@@ -58,7 +58,7 @@ export default function LevelFive() {
             className='bg-blue-800 w-1/2 p-2 my-2 rounded-md text-white font-semibold'
             onClick={()=> {setIncrement(increment - 1)}}
         >
-            Decrease Decrement Value
+            Decrease Increment Value
         </button>
     </div>
   )
