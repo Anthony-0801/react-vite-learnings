@@ -3,6 +3,7 @@ import LevelOne from './levels/LevelOne';
 import LevelTwo from './levels/LevelTwo';
 import LevelThree from './levels/LevelThree';
 import LevelFour from './levels/LevelFour';
+import LevelFive from './levels/LevelFive';
 
 const regions = [ 
     { 
@@ -33,9 +34,17 @@ const regions = [
         id: 4,
         imgSrc: 'https://cdn.pixabay.com/photo/2024/05/26/15/27/anime-8788959_1280.jpg',
         level: 'Level 4',
-        date: 'November 24',
+        date: 'November 24, 2024',
         title: 'Conditionally render a content or a component and display it.',
         Component: <LevelFour />,
+    },
+    {
+        id: 5,
+        imgSrc: 'https://cdn.pixabay.com/photo/2022/08/28/01/40/cyberpunk-city-7415576_1280.jpg',
+        level: 'Level 5',
+        date: 'November 26, 2024',
+        title: 'Handle an event and display the result.',
+        Component: <LevelFive />,
     }
 ];
 
