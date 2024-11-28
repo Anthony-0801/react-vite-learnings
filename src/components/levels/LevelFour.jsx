@@ -70,7 +70,7 @@ export default function LevelFour() {
 
   return (
     <div>
-        <h1 className='font-bold text-lg font-sans mb-2 border-b-2'>Level 4: In this level, we'll conditionally render a content or a component.</h1>
+        <h1 className='font-bold text-lg font-sans mb-2 border-b-2'>Level 4: In this level, I'll conditionally render a content or a component.</h1>
 
         <h2 className='font-medium text-md font-sans mb-2'> The first message is setup as an if-else condition and it has a state of 'false', the other one is in a ternary operator with a state of 'true'.</h2>
 

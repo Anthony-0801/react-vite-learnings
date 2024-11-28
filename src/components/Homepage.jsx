@@ -4,6 +4,7 @@ import LevelTwo from './levels/LevelTwo';
 import LevelThree from './levels/LevelThree';
 import LevelFour from './levels/LevelFour';
 import LevelFive from './levels/LevelFive';
+import LevelSix from './levels/LevelSix';
 
 const regions = [ 
     { 
@@ -43,8 +44,16 @@ const regions = [
         imgSrc: 'https://cdn.pixabay.com/photo/2022/08/28/01/40/cyberpunk-city-7415576_1280.jpg',
         level: 'Level 5',
         date: 'November 26, 2024',
-        title: 'Handle an event and display the result.',
+        title: 'Handle an event and display the results.',
         Component: <LevelFive />,
+    },
+    {
+        id: 6,
+        imgSrc: 'https://cdn.pixabay.com/photo/2022/09/22/00/34/street-7471408_1280.jpg',
+        level: 'Level 6',
+        date: 'November 28, 2024',
+        title: 'Handle form inputs and display the results.',
+        Component: <LevelSix />,
     }
 ];
 

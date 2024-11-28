@@ -49,7 +49,7 @@ export default function LevelThree() {
 
   return (
     <div>
-        <h1 className='font-bold text-lg font-sans mb-2 border-b-2'>Level 3: In this level, we'll map an array list of times of day but we'll pass some props in the LevelThreePassComponent component's props and display it here at this section.</h1>
+        <h1 className='font-bold text-lg font-sans mb-2 border-b-2'>Level 3: In this level, I'll map an array list of times of day but I'll pass some props in the LevelThreePassComponent component's props and display it here at this section.</h1>
         
         {
             Object.values(times).map((time, index) => 

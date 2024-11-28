@@ -28,7 +28,7 @@ export default function LevelFive() {
         </button>
 
 
-        <h2 className='font-medium text-md font-sans mt-4 mb-2 border-t-2'> In this next output, I'll adjust the increment number by your preference and it will display the output.</h2>
+        <h2 className='font-medium text-md font-sans mt-4 mb-2 border-t-2'> In this next output, I'll adjust the increment number by your preference and it will display the output by tapping the 'Increment' or 'Decrement' button.</h2>
          <p className='my-2 font-semibold'>Count value is: {num}</p>
 
         <button 
