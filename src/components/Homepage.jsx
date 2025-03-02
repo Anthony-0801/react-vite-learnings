@@ -6,6 +6,7 @@ import LevelFour from './levels/LevelFour';
 import LevelFive from './levels/LevelFive';
 import LevelSix from './levels/LevelSix';
 import TodoList from './mini-projects/todo-list/TodoList';
+import LevelSeven from './levels/LevelSeven';
 
 const regions = [ 
     { 
@@ -63,6 +64,15 @@ const regions = [
         date: 'December 11, 2024',
         title: 'Creation of Todolist.',
         Component: <TodoList />,
+    }
+    ,
+    {
+        id: 8,
+        imgSrc: 'https://cdn.pixabay.com/photo/2023/02/20/20/45/ai-generated-7803075_1280.jpg',
+        level: 'Level 7',
+        date: 'March 2, 2025',
+        title: 'Using useReducer',
+        Component: <LevelSeven />,
     }
 
     // imgSrc: 'https://cdn.pixabay.com/photo/2023/02/20/20/45/ai-generated-7803075_1280.jpg'
