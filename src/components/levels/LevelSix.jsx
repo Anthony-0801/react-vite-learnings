@@ -8,7 +8,7 @@ export default function LevelSix() {
 
     function handleSubmit(e) {
       e.preventDefault();
-      console.log(address);
+      alert(`You live in ${address.municipality} ${address.province}, ${address.country}.`);
     }
 
   return (
@@ -28,7 +28,7 @@ export default function LevelSix() {
             <p className='my-2 font-semibold'>Hello, {name.firstName} {name.lastName}! 👋</p>
         </form>
 
-        <h2 className='font-medium text-md font-sans mb-2 border-t-2'> In this challenge, I'll let a user and log it to the console.</h2>
+        <h2 className='font-medium text-md font-sans mb-2 border-t-2'> In this challenge, I'll let a user fill out the info provided and flash it.</h2>
         <form className='flex flex-col'>
           <label htmlFor="municipality">Municipality / City</label>
             <input onChange={(e) => setAddress({...address, municipality: e.target.value})} id='municipality' className='bg-base-200 mr-2'></input>

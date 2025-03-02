@@ -5,6 +5,7 @@ import LevelThree from './levels/LevelThree';
 import LevelFour from './levels/LevelFour';
 import LevelFive from './levels/LevelFive';
 import LevelSix from './levels/LevelSix';
+import TodoList from './mini-projects/todo-list/TodoList';
 
 const regions = [ 
     { 
@@ -54,7 +55,18 @@ const regions = [
         date: 'November 28, 2024',
         title: 'Handle form inputs and display the results.',
         Component: <LevelSix />,
+    },
+    {
+        id: 7,
+        imgSrc: 'https://cdn.pixabay.com/photo/2023/02/20/20/44/ai-generated-7803070_1280.jpg',
+        level: 'Mini Project 1',
+        date: 'December 11, 2024',
+        title: 'Creation of Todolist.',
+        Component: <TodoList />,
     }
+
+    // imgSrc: 'https://cdn.pixabay.com/photo/2023/02/20/20/45/ai-generated-7803075_1280.jpg'
+    // imgSrc: 'https://cdn.pixabay.com/photo/2023/02/20/20/44/ai-generated-7803073_1280.jpg'
 ];
 
 const ITEMS_PER_PAGE = 3;
