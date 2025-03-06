@@ -1,4 +1,5 @@
-import React, { useReducer } from "react";
+import React, { useReducer, useState } from "react";
+import LevelSevenBComponent from "./LevelSevenBComponent";
 
 export const LevelSeven = () => {
  const [state, dispatch] = useReducer(reducer, 0);
@@ -44,6 +45,8 @@ export const LevelSeven = () => {
     >
       Decrement
     </button>
+
+    <LevelSevenBComponent />
   </>
   )
 };
