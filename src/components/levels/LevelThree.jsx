@@ -54,7 +54,7 @@ export default function LevelThree() {
         {
             Object.values(times).map((time, index) => 
             (
-                <LevelThreePassComponent index={index} title={time.title} description={time.description} emoji={time.emoji} />
+                <LevelThreePassComponent key={index} title={time.title} description={time.description} emoji={time.emoji} />
             ))
         }
     </div>
