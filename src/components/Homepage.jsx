@@ -7,6 +7,8 @@ import LevelFive from './levels/LevelFive';
 import LevelSix from './levels/LevelSix';
 import TodoList from './mini-projects/todo-list/TodoList';
 import LevelSeven from './levels/LevelSeven';
+import { Navigate } from 'react-router-dom';
+import { NavigateToTodoList } from './navigate/NavigateToTodoList';
 
 const regions = [ 
     { 
@@ -63,7 +65,7 @@ const regions = [
         level: 'Mini Project 1',
         date: 'December 11, 2024',
         title: 'Creation of Todolist.',
-        Component: <TodoList />,
+        Component: <NavigateToTodoList />,
     }
     ,
     {
