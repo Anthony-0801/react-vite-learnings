@@ -9,6 +9,7 @@ import TodoList from './mini-projects/todo-list/TodoList';
 import LevelSeven from './levels/LevelSeven';
 import { Navigate } from 'react-router-dom';
 import { NavigateToTodoList } from './navigate/NavigateToTodoList';
+import { LevelEight } from './levels/LevelEight';
 
 const regions = [ 
     { 
@@ -66,8 +67,7 @@ const regions = [
         date: 'December 11, 2024',
         title: 'Creation of Todolist.',
         Component: <NavigateToTodoList />,
-    }
-    ,
+    },
     {
         id: 8,
         imgSrc: 'https://cdn.pixabay.com/photo/2023/02/20/20/45/ai-generated-7803075_1280.jpg',
@@ -75,10 +75,17 @@ const regions = [
         date: 'March 2, 2025',
         title: 'Using useReducer',
         Component: <LevelSeven />,
+    },
+    {
+        id: 9,
+        imgSrc: 'https://cdn.pixabay.com/photo/2023/02/20/20/44/ai-generated-7803073_1280.jpg',
+        level: 'Level 8',
+        date: 'March 18, 2025',
+        title: 'Routing using React Router',
+        Component: <LevelEight />,
+
     }
 
-    // imgSrc: 'https://cdn.pixabay.com/photo/2023/02/20/20/45/ai-generated-7803075_1280.jpg'
-    // imgSrc: 'https://cdn.pixabay.com/photo/2023/02/20/20/44/ai-generated-7803073_1280.jpg'
 ];
 
 const ITEMS_PER_PAGE = 3;

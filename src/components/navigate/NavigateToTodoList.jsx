@@ -3,7 +3,6 @@ import { Navigate, useNavigate } from 'react-router-dom'
 
 export const NavigateToTodoList = () => {
     const navigate = useNavigate();
-
   return (
     <div>
         <button 
