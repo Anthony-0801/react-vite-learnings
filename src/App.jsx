@@ -4,6 +4,7 @@ import TodoList from "./components/mini-projects/todo-list/TodoList";
 import { NotFoundComponent } from "./components/NotFoundComponent";
 import { RouteHome } from "./components/navigate/routing-examples/RouteHome";
 import { RouteNested } from "./components/navigate/routing-examples/RouteNested";
+import { RouteMix } from "./components/navigate/routing-examples/RouteMix";
 
 export default function App() {
   return (
@@ -16,8 +17,8 @@ export default function App() {
           <Route path="/todo-list" element={<TodoList />} />
           <Route path="/route-exercise" element={<RouteHome />}>
             <Route path="nested-routes" element={<RouteNested />} />
-
           </Route>
+          <Route path="/mix-routes" element={<RouteMix />} />
           <Route path="*" element={<NotFoundComponent />} />
         </Routes>
       </BrowserRouter>
