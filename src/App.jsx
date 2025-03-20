@@ -5,6 +5,7 @@ import { NotFoundComponent } from "./components/NotFoundComponent";
 import { RouteHome } from "./components/navigate/routing-examples/RouteHome";
 import { RouteNested } from "./components/navigate/routing-examples/RouteNested";
 import { RouteMix } from "./components/navigate/routing-examples/RouteMix";
+import { RouteMixFormResult } from "./components/navigate/routing-examples/RouteMixFormResult";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
             <Route path="nested-routes" element={<RouteNested />} />
           </Route>
           <Route path="/mix-routes" element={<RouteMix />} />
+          <Route path="/useLocation" element={<RouteMixFormResult />} />
           <Route path="*" element={<NotFoundComponent />} />
         </Routes>
       </BrowserRouter>

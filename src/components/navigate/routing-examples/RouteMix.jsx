@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const RouteMix = () => {
+  const [name, setName] = useState("");
+  const navigate = useNavigate();
+
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg border border-gray-200">
       <h1 className="text-center text-2xl font-semibold">
@@ -54,6 +58,25 @@ export const RouteMix = () => {
         We can use the useLocation() hook to get the current location and use it
         in our app.
       </p>
+      <div className="divider mt-4">
+        Here's an example of using useLocation in a form
+      </div>
+      <form className="flex flex-col gap-4 p-4 mt-4 rounded-md">
+        <fieldset className="fieldset">
+          <legend className="fieldset-legend">What is your name?</legend>
+          <input type="text" className="input input-primary w-full" placeholder="Type here" value={name} onChange={(e) => setName(e.target.value)} />
+        </fieldset>
+
+        <button
+          className="block mt-2 bg-blue-500 text-white px-4 py-2 rounded-md shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+          onClick={(e) => {
+            e.preventDefault();
+            navigate("/useLocation", { state: { name } });
+          }}
+        >
+          Submit
+        </button>
+      </form>
     </div>
   );
 };

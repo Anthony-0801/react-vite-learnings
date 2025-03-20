@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export const NotFoundComponent = () => {
+  const navigate = useNavigate();
   return (
     <div class="w-full h-screen bg-gray-50 flex flex-col lg:flex-row items-center justify-center space-y-16 lg:space-y-0 space-x-8 2xl:space-x-0">
       <div class="w-full lg:w-1/2 flex flex-col items-center justify-center lg:px-2 xl:px-0 text-center">
@@ -14,7 +16,7 @@ export const NotFoundComponent = () => {
           Sorry, the page you are looking for could not be found.
         </p>
         <a
-          href="#"
+          onClick={() => navigate("/")}
           class="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-gray-100 px-4 py-2 rounded transition duration-150"
           title="Return Home"
         >
