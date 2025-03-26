@@ -11,6 +11,7 @@ import { Navigate } from 'react-router-dom';
 import { NavigateToTodoList } from './navigate/NavigateToTodoList';
 import { LevelEight } from './levels/LevelEight';
 import { LevelNine } from './levels/LevelNine';
+import { LevelTen } from './levels/LevelTen';
 
 const regions = [ 
     { 
@@ -93,6 +94,14 @@ const regions = [
         title: 'Using Context API',
         Component: <LevelNine />,
     },
+    {
+        id: 11,
+        imgSrc: 'https://img.freepik.com/free-photo/cartoon-style-summer-scene-with-beach_23-2151068392.jpg?t=st=1742535542~exp=1742539142~hmac=c25749c60e65d0eea20b608fe4b1d1c007d22220b6fd34647bd627d4dfa7309e&w=996',
+        level: 'Level 10',
+        date: 'March 26, 2025',
+        title: 'Using Custom Hooks',
+        Component: <LevelTen />,
+    }
 
     //imgSrc: 'https://img.freepik.com/free-photo/anime-style-clouds_23-2151071795.jpg?t=st=1742530478~exp=1742534078~hmac=bd2fdee8a05d3d5f034bfe84d987d8b553d6ee34577b8d505e6063cd896b2286&w=2000',
     //imgSrc: 'https://img.freepik.com/free-photo/cartoon-style-summer-scene-with-beach_23-2151068392.jpg?t=st=1742535542~exp=1742539142~hmac=c25749c60e65d0eea20b608fe4b1d1c007d22220b6fd34647bd627d4dfa7309e&w=996',
