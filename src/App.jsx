@@ -13,7 +13,7 @@ import { UserProvider } from "./components/context/UserContext";
 export default function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/react-vite-learnings">
         <UserProvider>
           <Routes>
             <Route path="/" element={<Homepage />} />
